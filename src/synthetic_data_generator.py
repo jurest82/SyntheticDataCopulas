@@ -8,8 +8,9 @@ def generate_multivariate_data(X, bins=10, N=1000):
     '''This function generates new multivariate data respecting the dependency 
     structures between variables.
 
-    Read the article Restrepo, Juan. P.; Rivera, J.C.; Laniado, H., Osorio, P; Becerra, O. 
-    Nonparametric Generation of Synthetic Data Using Copulas. Electronics 2022, 1, 0. https://doi.org/
+    Read the article Restrepo, J.P.; Rivera, J.C.; Laniado, H.; Osorio, P.; Becerra, O.A. 
+    Nonparametric Generation of Synthetic Data Using Copulas. 
+    Electronics 2023, 12, 1601. https://doi.org/10.3390/electronics12071601
     if you have any questions.
 
     -----------
