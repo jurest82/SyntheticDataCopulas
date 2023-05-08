@@ -28,12 +28,12 @@ with Apache 2.0 code.
 
 ## Dependecies
 
-To install the dependencies use pip 
+To install the dependencies use pip
 
 ```
 pip install -r requirements.txt
 ```
-The main packages are: 
+The main packages are:
 
 - numpy
 - pandas
@@ -42,3 +42,17 @@ The main packages are:
 ## Examples of synthetic data generation
 
 The file `example.ipynb` contains five examples of synthetic data generation
+
+
+## To deploy
+1. Create a python virtual env
+2. `python3 -m pip install --upgrade pip`
+3. `python3 -m pip install --upgrade build`
+4. `python3 -m pip install --upgrade twine`
+5. `python3 -m twine upload --repository testpypi dist/*`
+
+
+## To install anywhere else
+1. Create a python virtual env
+1. `python3 -m pip install --index-url https://test.pypi.org/simple/ non-parametric-multivariate-data-generator`
+1. `pip install "pandas>=1.3.5" "matplotlib>=3.2.2" "numpy>=1.21.6"`
