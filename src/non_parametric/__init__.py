@@ -1,0 +1,1 @@
+from .synthetic_data_generator import generate_multivariate_data

@@ -1,8 +1,8 @@
 import numpy as np
 import pandas as pd
 
-from .utilities.empirical_cumulative_distribution import cdf
-from .utilities.frequency_table import frequency_table
+from .empirical_cumulative_distribution import cdf
+from .frequency_table import frequency_table
 
 
 def generate_multivariate_data(X, bins=10, N=1000):
