@@ -68,12 +68,13 @@ generated_data.head()
 
 ## To install anywhere else
 1. Create and activate a python virtual env
-1. `python3 -m pip install --index-url https://test.pypi.org/simple/ non-parametric-multivariate-data-generator`
-1. `pip install "pandas>=1.3.5" "matplotlib>=3.2.2" "numpy>=1.21.6"`
+1. `python -m pip install --index-url https://test.pypi.org/simple/ --extra-index-url https://pypi.org/simple non-parametric-multivariate-data-generator`
 
 ## To deploy to pypi
 1. Create and activate a python virtual env
 1. `python3 -m pip install --upgrade pip`
 1. `python3 -m pip install --upgrade build`
 1. `python3 -m pip install --upgrade twine`
+1. Change project version property in `pyproject.toml`
+1. `python3 -m build`
 1. `python3 -m twine upload --repository testpypi dist/*`
