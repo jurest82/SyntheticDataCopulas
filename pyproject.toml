@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "non-parametric-multivariate-data-generator"
-version = "0.0.1"
+version = "0.0.2"
 authors = [
   { name="Juan P. Restrepo", email="jurest82@eafit.edu.co" },
   { name="Pablo Osorio", email="osoriopabl@gmail.com" },
