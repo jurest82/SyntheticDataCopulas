@@ -5,7 +5,7 @@ from .empirical_cumulative_distribution import cdf
 from .frequency_table import frequency_table
 
 
-def generate_multivariate_data(X, bins=10, N=1000):
+def generate_multivariate_data(X: pd.DataFrame, bins: int = 10, N: int = 1000):
     """This function generates new multivariate data respecting the dependency
     structures between variables.
 
@@ -17,12 +17,12 @@ def generate_multivariate_data(X, bins=10, N=1000):
 
     -----------
     Parameters:
-    X: DataFrame
+    X
       It is the original dataset
-    bins: int, default 10
+    bins
       It is the number of classes of intervals for the calculation
       of the frequency table
-    N: int, default 1000
+    N
       It is the number of simulated data to generate
 
     -----------
