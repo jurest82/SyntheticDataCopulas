@@ -43,16 +43,37 @@ The main packages are:
 
 The file `example.ipynb` contains five examples of synthetic data generation
 
+##  Example usage
+```python
+import numpy as np
+import pandas as pd
+data = pd.DataFrame(np.random.normal(size=(100, 3)), columns=['a', 'b', 'c'])
 
-## To deploy
-1. Create a python virtual env
-2. `python3 -m pip install --upgrade pip`
-3. `python3 -m pip install --upgrade build`
-4. `python3 -m pip install --upgrade twine`
-5. `python3 -m twine upload --repository testpypi dist/*`
+from  non_parametric import generate_multivariate_data
+generated_data = generate_multivariate_data(data, N=1000)
+generated_data.head()
+"""
+          a         b         c
+0 -0.811318 -2.199115  0.911802
+1  1.006849  0.695056  0.027386
+2  0.839067 -0.194327 -0.641318
+3 -0.955104 -0.384175  0.462385
+4 -0.197083  2.520539 -0.835229
+"""
+```
 
+## To install and test locally
+1. Create and activate a python virtual env
+1. `pip install -e .`
 
 ## To install anywhere else
-1. Create a python virtual env
+1. Create and activate a python virtual env
 1. `python3 -m pip install --index-url https://test.pypi.org/simple/ non-parametric-multivariate-data-generator`
 1. `pip install "pandas>=1.3.5" "matplotlib>=3.2.2" "numpy>=1.21.6"`
+
+## To deploy to pypi
+1. Create and activate a python virtual env
+1. `python3 -m pip install --upgrade pip`
+1. `python3 -m pip install --upgrade build`
+1. `python3 -m pip install --upgrade twine`
+1. `python3 -m twine upload --repository testpypi dist/*`
