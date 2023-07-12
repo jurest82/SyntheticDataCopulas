@@ -1,7 +1,7 @@
 # Non-parametric-multivariate-data-generator
 
 
-This repository contains the code for the Python3 implementation of the method explained in the following article: 
+This repository contains the code for the Python3 implementation of the method explained in the following article:
 Restrepo, J.P.; Rivera, J.C.; Laniado, H.; Osorio, P.; Becerra, O.A. Nonparametric Generation of Synthetic Data Using Copulas. Electronics 2023, 12, 1601. https://doi.org/10.3390/electronics12071601
 
 
@@ -62,9 +62,12 @@ generated_data.head()
 """
 ```
 
-## To install and test locally
+## To install, test locally and develop
 1. Create and activate a python virtual env
-1. `pip install -e .`
+1. `pip install -e ".[dev]"`
+1. `pytest`
+1. `pre-commit install`
+
 
 ## To install anywhere else
 1. Create and activate a python virtual env
@@ -78,3 +81,4 @@ generated_data.head()
 1. Change project version property in `pyproject.toml`
 1. `python3 -m build`
 1. `python3 -m twine upload --repository testpypi dist/*`
+   El usuario es `__token__` y la contraseña se genera en https://test.pypi.org/manage/account/token/
