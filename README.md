@@ -1,9 +1,7 @@
 # Non-parametric-multivariate-data-generator
 
-
 This repository contains the code for the Python3 implementation of the method explained in the following article:
-Restrepo, J.P.; Rivera, J.C.; Laniado, H.; Osorio, P.; Becerra, O.A. Nonparametric Generation of Synthetic Data Using Copulas. Electronics 2023, 12, 1601. https://doi.org/10.3390/electronics12071601
-
+Restrepo, J.P.; Rivera, J.C.; Laniado, H.; Osorio, P.; Becerra, O.A. Nonparametric Generation of Synthetic Data Using Copulas. Electronics 2023, 12, 1601. <https://doi.org/10.3390/electronics12071601>
 
 ## License
 
@@ -26,24 +24,18 @@ into other commercial products. A user will be able to deploy and use all
 versions of the server for themselves / their company just as they would
 with Apache 2.0 code.
 
-## Dependecies
+## Installation
 
-To install the dependencies use pip
-
+```bash
+pip install non-parametric-multivariate-data-generator
 ```
-pip install -r requirements.txt
-```
-The main packages are:
-
-- numpy
-- pandas
-- matplotlib
 
 ## Examples of synthetic data generation
 
 The file `example.ipynb` contains five examples of synthetic data generation
 
-##  Example usage
+## Example usage
+
 ```python
 import numpy as np
 import pandas as pd
@@ -62,18 +54,34 @@ generated_data.head()
 """
 ```
 
+## Dependecies
+
+To install the dependencies use pip
+
+```
+pip install -r requirements.txt
+```
+
+The main packages are:
+
+- numpy
+- pandas
+- matplotlib
+
 ## To install, test locally and develop
+
 1. Create and activate a python virtual env
 1. `pip install -e ".[dev]"`
 1. `pytest`
 1. `pre-commit install`
 
-
 ## To install anywhere else
+
 1. Create and activate a python virtual env
 1. `python -m pip install --index-url https://test.pypi.org/simple/ --extra-index-url https://pypi.org/simple non-parametric-multivariate-data-generator`
 
 ## To deploy to pypi
+
 1. Create and activate a python virtual env
 1. `python3 -m pip install --upgrade pip`
 1. `python3 -m pip install --upgrade build`
@@ -81,4 +89,4 @@ generated_data.head()
 1. Change project version property in `pyproject.toml`
 1. `python3 -m build`
 1. `python3 -m twine upload --repository testpypi dist/*`
-   El usuario es `__token__` y la contraseña se genera en https://test.pypi.org/manage/account/token/
+   El usuario es `__token__` y la contraseña se genera en <https://test.pypi.org/manage/account/token/>
